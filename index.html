@@ -2,7 +2,9 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estimasi Biaya Kegiatan Mahasiswa</title>
+
     <style>
         body{
             font-family: Arial, sans-serif;
@@ -11,49 +13,105 @@
         }
 
         .container{
-            background:white;
+            background:#ffffff;
             padding:25px;
-            border-radius:10px;
-            box-shadow:0 2px 5px rgba(0,0,0,.1);
+            border-radius:12px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+            max-width:800px;
+            margin:auto;
         }
 
         h1{
             color:#1f4e79;
+            text-align:center;
+        }
+
+        h2{
+            color:#2c3e50;
+            border-bottom:2px solid #e5e5e5;
+            padding-bottom:5px;
         }
 
         ul{
             line-height:1.8;
         }
+
+        .info{
+            background:#eef5ff;
+            padding:15px;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+
+        .footer{
+            margin-top:25px;
+            text-align:center;
+            color:#666;
+            font-size:14px;
+        }
     </style>
 </head>
+
 <body>
 
 <div class="container">
 
-<h1>Sistem Estimasi Biaya Kegiatan Mahasiswa</h1>
+    <h1>Mini Project Azure Serverless</h1>
 
-<p><strong>Nama Mahasiswa:</strong> Budi</p>
-<p><strong>Mata Kuliah:</strong> Komputasi Awan</p>
-<p><strong>Praktikum:</strong> Azure Serverless Computing</p>
+    <div class="info">
+        <p><strong>Nama Mahasiswa :</strong> Khairunnisa Aliya</p>
+        <p><strong>NIM :</strong> 0920240010</p>
+        <p><strong>Mata Kuliah :</strong> Komputasi Awan</p>
+        <p><strong>Praktikum :</strong> Azure Static Web Apps & Azure Functions</p>
+    </div>
 
-<h3>Layanan Azure yang Digunakan</h3>
+    <h2>Deskripsi Project</h2>
 
-<ul>
-    <li>Azure Static Web Apps</li>
-    <li>Azure Functions</li>
-</ul>
+    <p>
+        Sistem ini digunakan untuk menghitung estimasi biaya konsumsi
+        kegiatan mahasiswa menggunakan layanan Azure Serverless.
+    </p>
 
-<h3>Ketentuan Harga</h3>
+    <h2>Layanan Azure yang Digunakan</h2>
 
-<ul>
-    <li>Snack : Rp15.000 / peserta</li>
-    <li>Makan : Rp30.000 / peserta</li>
-    <li>Lengkap : Rp45.000 / peserta</li>
-</ul>
+    <ul>
+        <li>Azure Static Web Apps (Frontend Website)</li>
+        <li>Azure Functions (Backend API)</li>
+        <li>Azure App Service</li>
+        <li>Azure Container Apps</li>
+    </ul>
 
-<p>
-API digunakan untuk menghitung estimasi biaya konsumsi kegiatan mahasiswa.
-</p>
+    <h2>Ketentuan Harga Konsumsi</h2>
+
+    <ul>
+        <li>Snack : Rp15.000 per peserta</li>
+        <li>Makan : Rp30.000 per peserta</li>
+        <li>Lengkap : Rp45.000 per peserta</li>
+    </ul>
+
+    <h2>Contoh Penggunaan API</h2>
+
+    <p>
+        Parameter:
+    </p>
+
+    <ul>
+        <li>jumlah = 40</li>
+        <li>jenis = snack</li>
+    </ul>
+
+    <p>
+        Hasil estimasi biaya:
+    </p>
+
+    <ul>
+        <li>Harga per peserta = Rp15.000</li>
+        <li>Total biaya = Rp600.000</li>
+    </ul>
+
+    <div class="footer">
+        © 2026 Praktikum Komputasi Awan - Azure Serverless Computing
+    </div>
 
 </div>
 
